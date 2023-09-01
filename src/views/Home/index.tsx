@@ -1,19 +1,21 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { useNavigation } from '@react-navigation/native';
-import { Container, TextExit } from './style';
+import React, { useContext, useEffect } from 'react';
+import { Container } from './style';
 import { AppContext } from '../../contexts/AppContext';
 import CardBeers from '../../components/cardBeers';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../redux/rootReducer';
 
 const Home: React.FC = () => {
-    const {getBeers, dataBeers, setDataBeersSelected, dataBeersSelected} = useContext(AppContext);
-   
+    const { getBeers } = useContext(AppContext);
+    const beers = useSelector((state: RootState) => state.beers);
+    
     useEffect(() => {
         getBeers()
       }, []);
 
     return (
         <Container>
-            {dataBeers && dataBeers.map(item => (
+            {beers && beers.map(item => (
                <CardBeers data={item} />
             ))}
         </Container>

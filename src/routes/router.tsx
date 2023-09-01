@@ -6,18 +6,10 @@ import { AppProvider } from '../contexts/AppContext';
 import Details from '../views/Details';
 import { COLORS } from '../constants'
 
-//import  {createStore, applyMiddleware} from 'redux';
-//import  createSagaMiddlwWare from 'redux-saga';
-//import  {Provider} from 'react-redux';
-//import reducers from '../redux/reducers'
-
 const Stack = createNativeStackNavigator();
 
 function Router() {
-  //const sagaMidlleware = createSagaMiddlwWare();
-  //const store = createStore(reducers, applyMiddleware(sagaMidlleware))
   return (
-    //<Provider store={store}>
     <AppProvider>
       <NavigationContainer>
         <Stack.Navigator initialRouteName="Home">
@@ -45,7 +37,6 @@ function Router() {
         </Stack.Navigator>
       </NavigationContainer>
     </AppProvider>
-    //</Provider>
   );
 }
 

@@ -1,5 +1,4 @@
-import React, { Dispatch, SetStateAction, useContext, useRef, useState } from 'react';
-import { ActivityIndicator } from 'react-native';
+import React, { useContext } from 'react';
 import {
     Card,
     ContainerImage,
@@ -17,7 +16,6 @@ export type DataProps = {
   };
 
 const CardBeers = ({data}: DataProps) => {
-    const [showActivity, setShowActivity] = useState<boolean>(false);
     const {setDataBeersSelected} = useContext(AppContext);
     const navigation = useNavigation();
 
