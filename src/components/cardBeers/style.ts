@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import { COLORS } from '../../constants'
 
 export const Card = styled.TouchableOpacity`
     display: flex;
@@ -8,9 +9,9 @@ export const Card = styled.TouchableOpacity`
     margin-top: 10px;
     margin-vertical: 5px;
     borderRadius: 8px;
-    border: 2px solid #242E42;
-    backgroundColor: #242E42;
-    shadow-color: #000;
+    border: 2px solid ${COLORS.primary};
+    backgroundColor: ${COLORS.primary};
+    shadow-color: ${COLORS.black};
     shadow-offset: 10px 10px;
     shadow-opacity: 0.3;
     shadow-radius: 10px;
@@ -37,7 +38,7 @@ export const TextTitle = styled.Text`
     text-align: center;
     lineHeight: 20px;
     fontWeight: 800; 
-    color: #fc564f;
+    color: ${COLORS.secondary};
     padding-right: 10px;
 `;
 
@@ -46,14 +47,14 @@ export const TextSubTitle = styled.Text`
     text-align: center;
     lineHeight: 20px; 
     fontWeight: 500; 
-    color: #fff;
+    color: ${COLORS.white};
     padding-right: 10px;
 `;
 
 export const TextDescription = styled.Text`  
     fontSize: 12px;
     lineHeight: 20px; 
-    color: #fff;
+    color: ${COLORS.white};
     padding-right: 10px;
     text-align: justify;
 `;

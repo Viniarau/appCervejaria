@@ -1,8 +1,9 @@
 import styled from 'styled-components/native';
+import { COLORS } from '../../constants'
 
 export const Container = styled.ScrollView`
     flex: 1;
-    background-color: #fff
+    background-color: ${COLORS.white};
 `;
 
 export const ContainerCard = styled.View`
@@ -41,8 +42,8 @@ export const ContainerColumnInfo = styled.View`
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    border: 4px solid #242E42;
-    background-color: #242E42;
+    border: 4px solid ${COLORS.primary};
+    background-color: ${COLORS.primary};
     border-radius: 10px;
 `;
 
@@ -59,7 +60,7 @@ export const TextTitle = styled.Text`
     text-align: center;
     lineHeight: 20px;
     fontWeight: 800; 
-    color: #242E42;
+    color: ${COLORS.primary};
     padding-vertical: 10px;
 `;
 
@@ -69,9 +70,9 @@ export const TextTitleBackground = styled.Text`
     text-align: center;
     lineHeight: 20px;
     fontWeight: 800; 
-    color: #fff;
+    color: ${COLORS.white};
     padding-vertical: 10px;
-    background-color: #fc564f;
+    background-color: ${COLORS.secondary};
     padding-vertical: 10px;
 `;
 
@@ -80,7 +81,7 @@ export const TextSubTitle = styled.Text`
     text-align: center;
     lineHeight: 20px; 
     fontWeight: 500; 
-    color: #000;
+    color: ${COLORS.black};
     padding-vertical: 10px;
 `;
 
@@ -90,8 +91,8 @@ export const TextSubTitleBackground = styled.Text`
     text-align: center;
     lineHeight: 20px; 
     fontWeight: 500; 
-    color: #fff;
-    background-color: #242E42;
+    color: ${COLORS.white};
+    background-color: ${COLORS.primary};
     padding-vertical: 10px;
     margin-top: 10px;
 `;
@@ -101,14 +102,14 @@ export const TextSubTitleInfo = styled.Text`
     text-align: center;
     lineHeight: 20px; 
     fontWeight: 800; 
-    color: #fff;
+    color: ${COLORS.white};
     padding-right: 2px;
 `;
 
 export const TextDescription = styled.Text`  
     fontSize: 18px;
     lineHeight: 25px; 
-    color: #000;
+    color: ${COLORS.black};
     padding-vertical: 10px;
     text-align: justify;
 `;
@@ -116,7 +117,7 @@ export const TextDescription = styled.Text`
 export const TextDescriptionInfo = styled.Text`  
     fontSize: 16px;
     lineHeight: 20px; 
-    color: #fff;
+    color: ${COLORS.white};
     text-align: justify;
 `;
 
