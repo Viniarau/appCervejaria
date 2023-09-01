@@ -19,7 +19,7 @@ import {
 
 import { AppContext } from '../../contexts/AppContext';
 
-const Ingredients: React.FC = () => {
+const Details: React.FC = () => {
     const {dataBeersSelected} = useContext(AppContext);
 
     return (
@@ -71,7 +71,7 @@ const Ingredients: React.FC = () => {
                 </ContainerRowInfo>
             </ContainerColumnInfo>
             <ContainerImage>
-                <ImageBeer source={{ uri: dataBeersSelected?.image_url }} />
+                <ImageBeer source={{ uri: dataBeersSelected?.image_url }} resizeMode="contain" />
             </ContainerImage>
         </ContainerInfo>
         <ContainerCard>
@@ -94,4 +94,4 @@ const Ingredients: React.FC = () => {
     )
 }
 
-export default Ingredients;
+export default Details;

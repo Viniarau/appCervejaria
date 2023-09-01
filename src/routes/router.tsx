@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from '../views/Home';
 import { AppProvider } from '../contexts/AppContext';
 import Details from '../views/Details';
+import { COLORS } from '../constants'
 
 //import  {createStore, applyMiddleware} from 'redux';
 //import  createSagaMiddlwWare from 'redux-saga';
@@ -31,7 +32,14 @@ function Router() {
             name="Details" 
             component={Details}
             options={{
-              headerShown: true
+              headerShown: true,
+              headerStyle: {
+                backgroundColor: COLORS.primary,
+              },
+              headerTintColor: COLORS.white,
+              headerTitleStyle: {
+                fontWeight: 'bold',
+              },
             }}
           />
         </Stack.Navigator>

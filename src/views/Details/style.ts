@@ -16,8 +16,6 @@ export const ContainerCard = styled.View`
 
 export const ContainerImage = styled.View`
     flex: 1;
-    max-widht: 100px;
-    max-height: 300px;
     padding: 10px;
     alignItems: center;
     justify-content: center;
@@ -33,6 +31,7 @@ export const ContainerIngredients = styled.View`
 export const ContainerInfo = styled.View`
     flex: 1;
     padding: 10px;
+    height: 300px;
     flex-direction: row;
 `;
 
@@ -122,8 +121,7 @@ export const TextDescriptionInfo = styled.Text`
 `;
 
 export const ImageBeer = styled.Image`
-  width: 60px;
-  height: 250px;
-  border-radius: 20px;
+  width: 100%;
+  height: 100%;
 `;
 

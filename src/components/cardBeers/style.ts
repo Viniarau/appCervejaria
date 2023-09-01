@@ -28,7 +28,7 @@ export const ContainerCard = styled.View`
 
 export const ContainerImage = styled.View`
     flex: 1;
-    padding: 10px;
+    padding: 5px;
     alignItems: center;
     justify-content: center;
 `;
@@ -60,6 +60,6 @@ export const TextDescription = styled.Text`
 `;
 
 export const ImageBeer = styled.Image`
-  width: 50px;
-  height: 150px;
+  width: 100%;
+  height: 100%;
 `;

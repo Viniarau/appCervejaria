@@ -40,7 +40,7 @@ const CardBeers = ({data}: DataProps) => {
             </TextDescription>
         </ContainerCard>
         <ContainerImage>
-            <ImageBeer source={{ uri: data.image_url }} />
+            <ImageBeer source={{ uri: data.image_url }} resizeMode="contain" />
         </ContainerImage>
     </Card>
     )
