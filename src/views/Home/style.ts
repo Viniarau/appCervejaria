@@ -1,9 +1,9 @@
 import styled from 'styled-components/native';
 
-export const Container = styled.View`
+export const Container = styled.ScrollView`
     flex: 1;
-    align-items: center;
-    padding-top: 35px;
+    margin-top: 50px;
+    padding-horizontal: 15px;
     background-color: #fff
 `;
 

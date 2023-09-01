@@ -1,0 +1,20 @@
+const initialState = {
+    count: 0
+}
+
+export default function (state = initialState, action) {
+    switch (action.type) {
+        case 'INCREMENTE':
+            return {
+                ...state,
+                count: state.count + 1,
+            };
+        case 'DECREMENT':
+            return {
+                ...state,
+                count: state.count - 1,
+            };
+        default: 
+            return initialState
+    }
+}

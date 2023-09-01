@@ -1,0 +1,128 @@
+import styled from 'styled-components/native';
+
+export const Container = styled.ScrollView`
+    flex: 1;
+    background-color: #fff
+`;
+
+export const ContainerCard = styled.View`
+    flex: 4;
+    height: 100%;
+    padding-horizontal: 15px;
+    alignItems: center;
+    justify-content: space-around;
+`;
+
+export const ContainerImage = styled.View`
+    flex: 1;
+    max-widht: 100px;
+    max-height: 300px;
+    padding: 10px;
+    alignItems: center;
+    justify-content: center;
+`;
+
+export const ContainerIngredients = styled.View`
+    flex: 1;
+    padding: 10px;
+    alignItems: center;
+    justify-content: center;
+`;
+
+export const ContainerInfo = styled.View`
+    flex: 1;
+    padding: 10px;
+    flex-direction: row;
+`;
+
+export const ContainerColumnInfo = styled.View`
+    flex: 2;
+    padding: 5px;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    border: 4px solid #242E42;
+    background-color: #242E42;
+    border-radius: 10px;
+`;
+
+export const ContainerRowInfo = styled.View`
+    flex: 1;
+    padding: 10px;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+`;
+
+export const TextTitle = styled.Text`  
+    fontSize: 22px;
+    text-align: center;
+    lineHeight: 20px;
+    fontWeight: 800; 
+    color: #242E42;
+    padding-vertical: 10px;
+`;
+
+export const TextTitleBackground = styled.Text`
+    width: 150%;  
+    fontSize: 22px;
+    text-align: center;
+    lineHeight: 20px;
+    fontWeight: 800; 
+    color: #fff;
+    padding-vertical: 10px;
+    background-color: #fc564f;
+    padding-vertical: 10px;
+`;
+
+export const TextSubTitle = styled.Text`  
+    fontSize: 18px;
+    text-align: center;
+    lineHeight: 20px; 
+    fontWeight: 500; 
+    color: #000;
+    padding-vertical: 10px;
+`;
+
+export const TextSubTitleBackground = styled.Text` 
+    width: 150%;
+    fontSize: 18px;
+    text-align: center;
+    lineHeight: 20px; 
+    fontWeight: 500; 
+    color: #fff;
+    background-color: #242E42;
+    padding-vertical: 10px;
+    margin-top: 10px;
+`;
+
+export const TextSubTitleInfo = styled.Text`  
+    fontSize: 16px;
+    text-align: center;
+    lineHeight: 20px; 
+    fontWeight: 800; 
+    color: #fff;
+    padding-right: 2px;
+`;
+
+export const TextDescription = styled.Text`  
+    fontSize: 18px;
+    lineHeight: 25px; 
+    color: #000;
+    padding-vertical: 10px;
+    text-align: justify;
+`;
+
+export const TextDescriptionInfo = styled.Text`  
+    fontSize: 16px;
+    lineHeight: 20px; 
+    color: #fff;
+    text-align: justify;
+`;
+
+export const ImageBeer = styled.Image`
+  width: 60px;
+  height: 250px;
+  border-radius: 20px;
+`;
+
